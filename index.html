@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sri Infinity Convention Hall - Manikonda, Hyderabad</title>
+    <title>Sri Infinity Convention - Manikonda, Hyderabad</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
@@ -11,8 +11,8 @@
         /* CSS Reset & Basic Setup */
         :root {
             --gold: #D4AF37;
-            --dark-bg: #121212;
-            --secondary-dark: #1a1a1a;
+            --dark-bg: #1a1610; /* Elegant dark, warm brown */
+            --secondary-dark: #24201a; /* Slightly lighter warm brown */
             --text-light: #f0f0f0;
             --text-medium: #a0a0a0;
         }
@@ -83,8 +83,8 @@
             top: 0;
             left: 0;
             width: 100%;
-            padding: 20px 5%;
-            background: rgba(18, 18, 18, 0.8);
+            padding: 10px 5%; /* Adjusted padding for image logo */
+            background: rgba(26, 22, 16, 0.8);
             backdrop-filter: blur(10px);
             display: flex;
             justify-content: space-between;
@@ -93,12 +93,9 @@
             transition: background 0.3s ease;
         }
 
-        .logo {
-            font-family: 'Cinzel', serif;
-            font-size: 1.8rem;
-            color: var(--gold);
-            text-decoration: none;
-            font-weight: 700;
+        .logo img {
+            height: 50px; /* Control logo size */
+            width: auto;
             animation: fadeIn 2s;
         }
 
@@ -155,7 +152,7 @@
             padding: 12px 16px;
             text-decoration: none;
             display: block;
-            margin-left: 0; /* Reset margin for dropdown items */
+            margin-left: 0;
         }
 
         .dropdown-content a:hover {
@@ -186,8 +183,9 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: url('https://images.unsplash.com/photo-1542665952-145c2dbd72c0?q=80&w=2070&auto=format&fit=crop') no-repeat center center/cover;
-            filter: brightness(0.4);
+            /* YOUR HERO IMAGE ADDED HERE */
+            background: url('hero-background.jpg') no-repeat center center/cover;
+            filter: brightness(0.5);
             z-index: -1;
         }
 
@@ -385,8 +383,8 @@
             padding-top: 20px;
         }
 
-        /* --- Sticky Chat Button --- */
-        .chat-sticky-button {
+        /* --- Sticky Call Button --- */
+        .call-sticky-button {
             position: fixed;
             bottom: 30px;
             right: 30px;
@@ -402,28 +400,29 @@
             cursor: pointer;
             z-index: 999;
             transition: transform 0.3s ease, background-color 0.3s;
+            text-decoration: none;
         }
         
-        .chat-sticky-button:hover {
+        .call-sticky-button:hover {
             transform: scale(1.1);
             background-color: #ffdf70;
         }
 
-        .chat-sticky-button svg {
-            width: 32px;
-            height: 32px;
+        .call-sticky-button svg {
+            width: 30px;
+            height: 30px;
+            fill: #1a1610;
         }
         
         /* --- Responsive Design --- */
         @media (max-width: 768px) {
-            .logo { font-size: 1.5rem; }
-            .navbar { display: none; /* Simple hiding for demo; a hamburger menu is a better practice */ }
+            .navbar { display: none; }
             .hero-content h1 { font-size: 2.8rem; }
             .hero-content .subtitle { font-size: 1.2rem; }
             .section-title { font-size: 2.2rem; }
             #about { flex-direction: column; }
-            .chat-sticky-button { width: 50px; height: 50px; bottom: 20px; right: 20px;}
-            .chat-sticky-button svg { width: 28px; height: 28px;}
+            .call-sticky-button { width: 50px; height: 50px; bottom: 20px; right: 20px;}
+            .call-sticky-button svg { width: 26px; height: 26px;}
         }
 
     </style>
@@ -431,7 +430,9 @@
 <body>
 
     <header class="header">
-        <a href="#" class="logo">SRI INFINITY</a>
+        <a href="#" class="logo">
+            <img src="sri logo (1).png" alt="Sri Infinity Convention Logo">
+        </a>
         <nav class="navbar">
             <a href="#hero" class="active">Home</a>
             <a href="#about">About Us</a>
@@ -453,19 +454,19 @@
     <section id="hero" class="hero">
         <div class="hero-content">
             <p class="subtitle">EXPERIENCE GRANDEUR</p>
-            <h1>SRI INFINITY CONVENTION HALL</h1>
+            <h1>SRI INFINITY CONVENTION</h1>
             <p class="address">Manikonda, Hyderabad</p>
         </div>
     </section>
 
     <section id="about" class="section">
         <div class="about-image hidden">
-            <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=2069&auto=format&fit=crop" alt="Elegant interior of the convention hall">
+            <img src="IMG-20250715-WA0013.jpg" alt="Elegant interior of the convention hall">
         </div>
         <div class="about-content hidden">
             <h2 class="section-title" style="text-align: left; margin-bottom: 20px;">About Us</h2>
             <h3>Crafting Unforgettable Moments</h3>
-            <p>Welcome to Sri Infinity, the pinnacle of luxury and elegance in Hyderabad. Nestled in the heart of Manikonda, we are more than just a venue; we are the canvas for your most cherished memories. Our mission is to transform your events into timeless celebrations.</p>
+            <p>Welcome to Sri Infinity Convention, the pinnacle of luxury and elegance in Hyderabad. Nestled in the heart of Manikonda, we are more than just a venue; we are the canvas for your most cherished memories. Our mission is to transform your events into timeless celebrations.</p>
             <p>From grand weddings to corporate galas, our state-of-the-art facilities, meticulous attention to detail, and unparalleled service ensure every occasion is a seamless and spectacular success. At Sri Infinity, your vision is our command.</p>
         </div>
     </section>
@@ -474,27 +475,27 @@
         <h2 class="section-title">Our Exquisite Features</h2>
         <div class="features-grid">
             <div class="feature-card hidden" id="feature-main-hall">
-                <img src="https://images.unsplash.com/photo-1587899763319-3c7acc50b828?q=80&w=2070&auto=format&fit=crop" alt="Grand Main Hall">
+                <img src="IMG-20250715-WA0013.jpg" alt="Grand Main Hall">
                 <h3>Main Hall</h3>
                 <p>A majestic, pillar-less hall with soaring ceilings and customizable ambient lighting, designed to host the grandest of celebrations and corporate events.</p>
             </div>
             <div class="feature-card hidden" id="feature-parking">
-                <img src="https://images.unsplash.com/photo-1580649795258-a82f34273891?q=80&w=1974&auto=format&fit=crop" alt="Spacious Parking Area">
+                <img src="IMG-20250715-WA0014.jpg" alt="Spacious Parking Area">
                 <h3>Ample Parking</h3>
                 <p>Extensive, secure parking space with valet services, ensuring convenience and a hassle-free arrival for all your distinguished guests.</p>
             </div>
             <div class="feature-card hidden" id="feature-bar">
-                <img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?q=80&w=1974&auto=format&fit=crop" alt="Stylish Bar Room">
+                <img src="IMG-20250715-WA0015.jpg" alt="Stylish Bar Room">
                 <h3>Chic Bar Room</h3>
                 <p>A sophisticated, fully-stocked bar with contemporary decor. The perfect setting for your guests to mingle and enjoy exquisite cocktails.</p>
             </div>
             <div class="feature-card hidden" id="feature-dining">
-                <img src="https://images.unsplash.com/photo-1623634288035-1886b465b4c1?q=80&w=1964&auto=format&fit=crop" alt="Elegant Dining Area">
+                <img src="IMG-20250715-WA0016.jpg" alt="Elegant Dining Area">
                 <h3>Elegant Dining</h3>
                 <p>A dedicated, opulent dining area that offers a world-class culinary experience, with customizable menus crafted by our expert chefs.</p>
             </div>
             <div class="feature-card hidden" id="feature-banquet">
-                <img src="https://images.unsplash.com/photo-1594951926212-1f4f9573f4e3?q=80&w=1964&auto=format&fit=crop" alt="Luxurious Banquet Setup">
+                <img src="IMG-20250715-WA0017.jpg" alt="Luxurious Banquet Setup">
                 <h3>Lush Banquet</h3>
                 <p>Perfect for more intimate gatherings or pre-function events, our banquet spaces offer versatile arrangements and luxurious decor.</p>
             </div>
@@ -504,29 +505,30 @@
     <section id="gallery" class="section">
         <h2 class="section-title">A Glimpse of Infinity</h2>
         <div class="gallery-grid">
-            <div class="gallery-item hidden"><img src="https://images.pexels.com/photos/2263436/pexels-photo-2263436.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Wedding setup"></div>
-            <div class="gallery-item hidden"><img src="https://images.pexels.com/photos/169198/pexels-photo-169198.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Corporate event"></div>
-            <div class="gallery-item hidden"><img src="https://images.pexels.com/photos/1305763/pexels-photo-1305763.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Table setting"></div>
-            <div class="gallery-item hidden"><img src="https://images.pexels.com/photos/265906/pexels-photo-265906.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Dining detail"></div>
-            <div class="gallery-item hidden"><img src="https://images.pexels.com/photos/1487673/pexels-photo-1487673.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Exterior view"></div>
-            <div class="gallery-item hidden"><img src="https://images.pexels.com/photos/2774556/pexels-photo-2774556.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Lobby area"></div>
+            <div class="gallery-item hidden"><img src="IMG-20250715-WA0013.jpg" alt="Wedding setup"></div>
+            <div class="gallery-item hidden"><img src="IMG-20250715-WA0014.jpg" alt="Corporate event"></div>
+            <div class="gallery-item hidden"><img src="IMG-20250715-WA0015.jpg" alt="Table setting"></div>
+            <div class="gallery-item hidden"><img src="IMG-20250715-WA0016.jpg" alt="Dining detail"></div>
+            <div class="gallery-item hidden"><img src="IMG-20250715-WA0017.jpg" alt="Exterior view"></div>
+            <div class="gallery-item hidden"><img src="hero-background.jpg" alt="Lobby area"></div>
         </div>
     </section>
 
     <footer id="contact" class="footer">
-        <div class="footer-logo">SRI INFINITY</div>
+        <div class="footer-logo">SRI INFINITY CONVENTION</div>
         <p>Manikonda, Hyderabad, Telangana, 500089</p>
-        <p>For Bookings & Inquiries: <a href="tel:+910000000000" style="color:var(--gold); text-decoration: none;">+91 000 000 0000</a> | <a href="mailto:contact@sriinfinity.com" style="color:var(--gold); text-decoration: none;">contact@sriinfinity.com</a></p>
+        <p>For Bookings & Inquiries: <a href="tel:+917893288745" style="color:var(--gold); text-decoration: none;">+91 7893288745</a> | <a href="mailto:sri.infinity2024@gmail.com" style="color:var(--gold); text-decoration: none;">sri.infinity2024@gmail.com</a></p>
         <div class="copyright">
-            &copy; 2025 Sri Infinity Convention Hall. All Rights Reserved. Designed with ❤️.
+            &copy; 2025 Sri Infinity Convention. All Rights Reserved. Designed with ❤️.
         </div>
     </footer>
     
-    <div class="chat-sticky-button" onclick="alert('Chat feature coming soon!');">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M21 6.579C21 8.468 19.468 10 17.579 10H17V12C17 13.657 15.657 15 14 15H8.421C6.532 15 5 16.532 5 18.421V21H3V18.421C3 15.438 5.438 13 8.421 13H14C14.552 13 15 12.552 15 12V10H17.579C20.562 10 23 7.562 23 4.579C23 1.596 20.562 -0.842 17.579 2.141L21 6.579ZM19 3H11.579C9.69 3 8.157 4.532 8.157 6.421V8H11C12.657 8 14 6.657 14 5V3H19Z"/>
+    <a href="tel:+917893288745" class="call-sticky-button">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px">
+            <path d="M0 0h24v24H0V0z" fill="none"/>
+            <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.21-3.73-6.56-6.56l1.97-1.57c.27-.27.36-.66.25-1.01C8.7 6.42 8.5 5.21 8.5 3.99c0-.46-.37-.83-.83-.83H4.01c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.68c0-.46-.37-.83-.83-.83z"/>
         </svg>
-    </div>
+    </a>
 
     <script>
         // JavaScript for smooth scroll-triggered animations
@@ -534,16 +536,12 @@
             entries.forEach((entry) => {
                 if (entry.isIntersecting) {
                     entry.target.classList.add('show');
-                } else {
-                    // Optional: remove class to re-animate on scroll up
-                    // entry.target.classList.remove('show');
                 }
             });
         });
 
         const hiddenElements = document.querySelectorAll('.hidden');
         hiddenElements.forEach((el) => observer.observe(el));
-
     </script>
 
 </body>
