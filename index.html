@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Premium Business - Manikonda, Hyderabad</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      color: white;
+      background: linear-gradient(to right, #000000a8, #000000a8), url('https://source.unsplash.com/1600x900/?luxury,building') no-repeat center center/cover;
+      height: 100vh;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px;
+      background: rgba(0, 0, 0, 0.5);
+      animation: fadeInDown 1.2s ease-out;
+    }
+
+    header h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2em;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
+      animation: fadeInUp 1.5s ease-in;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      padding: 20px;
+      margin: 20px 0;
+      backdrop-filter: blur(10px);
+    }
+
+    .card h2 {
+      margin-top: 0;
+      color: #ffdd57;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: rgba(0, 0, 0, 0.6);
+    }
+
+    /* Floating Action Button */
+    .fab {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      background-color: #ffdd57;
+      color: black;
+      border: none;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      font-size: 28px;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      z-index: 999;
+      transition: transform 0.3s;
+    }
+
+    .fab:hover {
+      transform: scale(1.1);
+    }
+
+    /* Animations */
+    @keyframes fadeInDown {
+      from {
+        transform: translateY(-50px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        transform: translateY(50px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2em;
+      }
+
+      .fab {
+        width: 50px;
+        height: 50px;
+        font-size: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Infinity Convention Hall</h1>
+    <p>Elegance & Excellence in the heart of Manikonda, Hyderabad</p>
+  </header>
+
+  <section>
+    <div class="card">
+      <h2>About Us</h2>
+      <p>We provide a luxurious and professional space for your most important events. Whether it's a wedding, corporate meet, or social gathering, our convention hall is equipped with state-of-the-art amenities.</p>
+    </div>
+
+    <div class="card">
+      <h2>Services</h2>
+      <ul>
+        <li>Air-conditioned Banquet Hall</li>
+        <li>Modern Audio-Visual Setup</li>
+        <li>Ample Parking Space</li>
+        <li>Event Planning Assistance</li>
+        <li>Catering & Decoration Services</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Location</h2>
+      <p>📍 Manikonda, Hyderabad, Telangana 500089</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Infinity Convention Hall | All rights reserved</p>
+  </footer>
+
+  <!-- Floating Action Button -->
+  <a href="tel:+919000000000" title="Call Now">
+    <button class="fab">📞</button>
+  </a>
+
+</body>
+</html>
