@@ -11,8 +11,8 @@
         /* CSS Reset & Basic Setup */
         :root {
             --gold: #D4AF37;
-            --dark-bg: #1a1610; /* Elegant dark, warm brown */
-            --secondary-dark: #24201a; /* Slightly lighter warm brown */
+            --dark-bg: #181818; /* Sophisticated dark charcoal */
+            --secondary-dark: #222222; /* Slightly lighter charcoal */
             --text-light: #f0f0f0;
             --text-medium: #a0a0a0;
         }
@@ -84,7 +84,7 @@
             left: 0;
             width: 100%;
             padding: 10px 5%; /* Adjusted padding for image logo */
-            background: rgba(26, 22, 16, 0.8);
+            background: rgba(24, 24, 24, 0.8); /* Updated to match new dark bg */
             backdrop-filter: blur(10px);
             display: flex;
             justify-content: space-between;
@@ -414,6 +414,31 @@
             fill: #1a1610;
         }
         
+        /* --- Social Icons --- */
+        .social-icons {
+            margin: 25px 0;
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+        }
+
+        .social-icons a {
+            color: var(--text-medium);
+            transition: color 0.3s ease, transform 0.3s ease;
+            display: inline-block;
+        }
+
+        .social-icons a:hover {
+            color: var(--gold);
+            transform: translateY(-5px);
+        }
+
+        .social-icons svg {
+            width: 26px;
+            height: 26px;
+            fill: currentColor;
+        }
+
         /* --- Responsive Design --- */
         @media (max-width: 768px) {
             .navbar { display: none; }
@@ -486,7 +511,7 @@
             </div>
             <div class="feature-card hidden" id="feature-bar">
                 <img src="IMG-20250715-WA0015.jpg" alt="Stylish Bar Room">
-                <h3>Chic Bar Room</h3>
+                <h3> Bar Room</h3>
                 <p>A sophisticated, fully-stocked bar with contemporary decor. The perfect setting for your guests to mingle and enjoy exquisite cocktails.</p>
             </div>
             <div class="feature-card hidden" id="feature-dining">
@@ -496,7 +521,7 @@
             </div>
             <div class="feature-card hidden" id="feature-banquet">
                 <img src="IMG-20250715-WA0017.jpg" alt="Luxurious Banquet Setup">
-                <h3>Lush Banquet</h3>
+                <h3>Banquet</h3>
                 <p>Perfect for more intimate gatherings or pre-function events, our banquet spaces offer versatile arrangements and luxurious decor.</p>
             </div>
         </div>
@@ -518,6 +543,19 @@
         <div class="footer-logo">SRI INFINITY CONVENTION</div>
         <p>Manikonda, Hyderabad, Telangana, 500089</p>
         <p>For Bookings & Inquiries: <a href="tel:+917893288745" style="color:var(--gold); text-decoration: none;">+91 7893288745</a> | <a href="mailto:sri.infinity2024@gmail.com" style="color:var(--gold); text-decoration: none;">sri.infinity2024@gmail.com</a></p>
+        
+        <div class="social-icons">
+            <a href="#" aria-label="Facebook" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878V14.89h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v7.028C18.343 21.128 22 16.991 22 12z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/sri_infinity_convention_/" aria-label="Instagram" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.85s-.011 3.584-.069 4.85c-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07s-3.584-.012-4.85-.07c-3.252-.148-4.771-1.691-4.919-4.919-.058-1.265-.069-1.645-.069-4.85s.011-3.584.069-4.85c.149-3.225 1.664-4.771 4.919-4.919C8.416 2.175 8.796 2.163 12 2.163zm0 1.802c-3.149 0-3.518.01-4.745.068-2.68.122-3.868 1.309-3.99 3.99-.058 1.227-.068 1.597-.068 4.745s.01 3.518.068 4.745c.122 2.68 1.31 3.868 3.99 3.99 1.227.058 1.597.068 4.745.068s3.518-.01 4.745-.068c2.68-.122 3.868-1.309 3.99-3.99.058-1.227.068-1.597.068-4.745s-.01-3.518-.068-4.745c-.122-2.68-1.31-3.868-3.99-3.99-1.227-.058-1.597-.068-4.745-.068zm0 5.838a4.198 4.198 0 100 8.396 4.198 4.198 0 000-8.396zM12 18a2.198 2.198 0 110-4.396 2.198 2.198 0 010 4.396zm4.664-9.338a1.2 1.2 0 100 2.4 1.2 1.2 0 000-2.4z"/></svg>
+            </a>
+            <a href="#" aria-label="Twitter" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+        </div>
+        
         <div class="copyright">
             &copy; 2025 Sri Infinity Convention. All Rights Reserved. Designed with ❤️.
         </div>
